@@ -15,11 +15,14 @@ body {
 
 .container{
     background-color: rgba(0,0,0,0.8);
-    width: 80vw;
+    width: 90vw;
     color: cornsilk;
     text-align: center;
     margin: 40px auto;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
     
 }
 h1{
@@ -29,15 +32,20 @@ h1{
 }   
 
 .input-value{
-    width: 30vw;
-    height:25px;
+    width: 70vw;
+    height: 50px;
     border-radius: 25px;
     color:#333;
     padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
 }
+
 
 .input-value:focus{
     outline: none;
+    text-align: center;
 
 }
 input:focus::placeholder {
@@ -45,8 +53,8 @@ input:focus::placeholder {
   }
 
 .submitbtn{
-    width: 10vw;
-    height:50px;
+    min-width: 40vw;
+    height:70px;
     border-radius: 25px;
     background: linear-gradient(130deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     color: cornsilk;
@@ -63,8 +71,8 @@ input:focus::placeholder {
 }
 
 .deletebtn{
-    width: 10vw;
-    height:50px;
+    min-width: 40vw;
+    height:70px;
     border-radius: 25px;
     background: linear-gradient(130deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     color: cornsilk;
@@ -155,3 +163,40 @@ h4{
 .hide-loader{
 display:none;
 }
+
+@media only screen and (min-width: 900px) { 
+    .input-value{
+        width: 30vw;
+        height:25px;
+        
+      
+      
+    }
+}
+@media only screen and (min-width: 900px) { 
+    .submitbtn{
+        min-width: 10vw;
+        height:50px;
+        margin: 10px;
+     
+        
+    }
+}
+@media only screen and (min-width: 900px) { 
+    .deletebtn{
+        min-width: 10vw;
+        height:50px;
+       
+        
+    }
+  }
+  @media only screen and (min-width: 900px) { 
+    .container{
+ 
+        width: 80vw;
+      
+       
+        
+    }
+  }
+

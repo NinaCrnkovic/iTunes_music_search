@@ -15,7 +15,10 @@ class MusicSearch
     }
 
     getApiResp =(event)=>{
-        
+        if(this.inputValue.value.length === 0){
+            window.alert('You did not enter a term');
+            this.stopLoader();
+        } else {
         fetch(`https://itunes.apple.com/search?term=${this.inputValue.value}&entity=song`)
         .then (this.startLoader())
         .then(response=>response.json())
@@ -42,9 +45,9 @@ class MusicSearch
                  
         })
                        
-        .catch(err => alert('You did not enter a term or we could not find it'))
-        .then (this.stopLoader())
-    }
+        .catch(err => alert('You did not enter a term or we could not find it'));
+        this.stopLoader();
+    }}
 
     getDeleted=(event)=>{
         this.resultShow.innerHTML='';
