@@ -26,14 +26,15 @@ body {
     
 }
 h1{
-    font-size: 3em;
+    font-size: 2em;
     margin: 50px auto;
     padding: 30px;
+    width: 90%;
 }   
 
 .input-value{
     width: 70%;
-    height: 50px;
+    height: 30px;
     border-radius: 25px;
     color:#333;
     padding: 10px;
@@ -53,8 +54,8 @@ input:focus::placeholder {
   }
 
 .submitbtn{
-    width: 40%;
-    height:70px;
+    width: 30%;
+    height:40px;
     border-radius: 25px;
     background: linear-gradient(130deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     color: cornsilk;
@@ -71,8 +72,8 @@ input:focus::placeholder {
 }
 
 .deletebtn{
-    width: 40%;
-    height:70px;
+    width: 30%;
+    height:40px;
     border-radius: 25px;
     background: linear-gradient(130deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     color: cornsilk;
